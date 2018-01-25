@@ -8,7 +8,7 @@
     <p style="text-align: center">
       Last 20 Transactions:    
     </p>
-    <div>{{recent}}</div>
+    <transaction-list></transaction-list>
 
   </v-ons-page>
 </template>
@@ -16,6 +16,7 @@
 <script>
   import customToolbar from './CustomToolbar';
   import page2 from './Page2';
+  import transactionList from './TransactionList';
   import ApiMaker from './API/ApiMaker';
 
   var explorer = ApiMaker.Explorer('neoscanio');
@@ -39,7 +40,7 @@
      computed: {
      },
      props: ['pageStack'],
-     components: { customToolbar },
+     components: { customToolbar, transactionList },
      data() {
        return {
          title: "NeoSpy - Neo Blockchain Explorer",
