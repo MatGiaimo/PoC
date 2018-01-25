@@ -37,16 +37,13 @@
        this.getRecent();
      },
      computed: {
-       recent : { 
-         set: function () { this.getRecent },
-         get: function () { return msg }
-       }
      },
      props: ['pageStack'],
      components: { customToolbar },
      data() {
        return {
          title: "NeoSpy - Neo Blockchain Explorer",
+         recent: "Pending"
        };
      }
   }
