@@ -5,10 +5,7 @@
       <v-ons-search-input placeholder="Block Height, Hash, Address or Transaction id"></v-ons-search-input>
       <v-ons-button @click="push"><v-ons-icon icon="fa-arrow-right"></v-ons-icon></v-ons-button>
     </p>
-    <p style="text-align: center">
-      Last 20 Transactions:    
-    </p>
-    <transaction-list></transaction-list>
+    <transaction-list :transactions="recent" />
 
   </v-ons-page>
 </template>
@@ -20,7 +17,6 @@
   import ApiMaker from './API/ApiMaker';
 
   var explorer = ApiMaker.Explorer('neoscanio');
-  var msg = "Pending";
 
   export default {
      methods: {

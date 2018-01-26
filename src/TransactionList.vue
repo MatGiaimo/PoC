@@ -1,21 +1,32 @@
 <template>
+<div>
   <v-ons-list modifier="inset">
       <v-ons-list-header>
-     <div class="left" style="float:left;">Type</div>
-      <div class="center" style="float:left;">Transaction ID</div>
-      <div class="right" style="float:left;">Completed On</div>
+        Last 5 Transactions
       </v-ons-list-header>
-
-    <v-ons-list-item>
-      <div class="left">Left</div>
-      <div class="center">Center</div>
-      <div class="right">Right</div>
+      <v-ons-list-item>     
+      <div class="left">Type</div>
+      <div class="center">Transaction ID</div>
+      <div class="right">Completed On</div></v-ons-list-item>
+    <v-ons-list-item :key="n" v-for="n in 5">
+      <div class="left">{{transactions[n].type}}</div>
+      <div class="center">{{transactions[n].txid}}</div>
+      <div class="right">{{transactions[n].time}}</div>
     </v-ons-list-item>
   </v-ons-list>
+</div>
 </template>
 
 <script>
+
   export default {
-      props: ['transactions']
+      props: ['transactions'],
+      methods: {
+      },
+      components: {},
+      data() {
+        return {
+        }
+      }
   }
 </script>
