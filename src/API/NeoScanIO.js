@@ -10,8 +10,15 @@ var NeoScanIO = {
     getBalance(hash) {
         console.log('tbd');
     },
+    // /api/main_net/v1/get_transaction/{hash_string}
     getTransaction(hash) {
-        console.log('tbd');
+        return fetch(baseUrl + "get_transaction/" + hash)
+        .then((resp) => resp.json())
+        .then((data) => {
+            console.log(data);
+            return data;
+        })
+        .catch(err => console.warn(err));
     },
     getHeight() {
         console.log('tbd');
