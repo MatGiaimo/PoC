@@ -22,18 +22,16 @@ export default {
       this.pageStack.pop();
     }
   },
-  beforeMount() {
-    this.bus.$on('block_hash', block_hash => {
-      explorer.getTransaction(block_hash).then((data) => this.tx);
-      console.log(this.tx);
-    });
+  mounted() {
+      explorer.getTransaction(this.txid).then((data) => this.tx = data);
   },
-  props: ["pageStack","hash","bus"],
+  props: ["pageStack","hash"],
   components: { customToolbar },
   data() {
     return {
       title: "Transaction Information",
       tx: {},
+      txid: "",
       back: "Back"
     };
   }

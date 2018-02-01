@@ -5,7 +5,7 @@
       <v-ons-search-input placeholder="Block Height, Hash, Address or Transaction id"></v-ons-search-input>
       <v-ons-button><v-ons-icon icon="fa-arrow-right"></v-ons-icon></v-ons-button>
     </p>
-    <transaction-list :transactions="recent" :page-stack="pageStack" :bus="bus"/>
+    <transaction-list :transactions="recent" :page-stack="pageStack"/>
 
   </v-ons-page>
 </template>
@@ -31,7 +31,7 @@
      },
      computed: {
      },
-     props: ['pageStack','bus'],
+     props: ['pageStack'],
      components: { customToolbar, transactionList },
      data() {
        return {
