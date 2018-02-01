@@ -9,12 +9,10 @@
         <div class="center">Transaction ID</div>
         <div class="right">Completed On</div>
       </v-ons-list-item>
-      <v-ons-list-item :key="n" v-for="n in 5" tappable>
-        <v-ons-button :id="'li-' + n" modifer="quiet" @click="details(transactions[n].txid)">
+      <v-ons-list-item :key="n" v-for="n in 5" tappable @click="details(transactions[n].txid)">
           <div class="left">{{transactions[n].type}}</div>
           <div class="center">{{String(transactions[n].txid).slice(0,12)+'...'}}</div>
           <div class="right">{{moment(transactions[n].time*1000).format()}}</div>
-        </v-ons-button>
       </v-ons-list-item>
     </v-ons-list>
   </div>
