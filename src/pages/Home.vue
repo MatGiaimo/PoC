@@ -11,11 +11,11 @@
 </template>
 
 <script>
-  import customToolbar from './CustomToolbar';
-  import transactionList from './TransactionList';
-  import ApiMaker from './API/ApiMaker';
+  import customToolbar from '../partials/CustomToolbar.vue';
+  import transactionList from '../partials/TransactionList.vue';
+  import apiMaker from '../api/ApiMaker';
 
-  var explorer = ApiMaker.Explorer('neoscanio');
+  var explorer = apiMaker.Explorer('neoscanio');
 
   export default {
      methods: {

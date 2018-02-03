@@ -7,13 +7,12 @@
 
 <script>
   import Vue from 'vue';
-  import page1 from './Page1';
-  import page2 from './Page2';
+  import home from './pages/Home.vue';
 
   export default {
     data() {
       return {
-        pageStack: [page1]
+        pageStack: [home]
       }
     }
   }

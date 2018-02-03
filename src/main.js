@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import Vuex from 'vuex';
 import VueOnsen from 'vue-onsenui';
 
 import 'onsenui';
@@ -8,6 +9,7 @@ require('onsenui/css/onsenui.css');
 
 import App from './App';
 
+Vue.use(Vuex);
 Vue.use(VueOnsen);
 
 new Vue({

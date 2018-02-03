@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import page2 from './Page2';
+  import txDetails from '../pages/TxDetails.vue';
 
   let moment = require('moment');
 
@@ -28,7 +28,7 @@
     methods: {
       details(txid) {
          this.pageStack.push({
-           extends: page2,
+           extends: txDetails,
            data() {
              return {
                txid: txid
