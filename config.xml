@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="com.example.helloworld" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" id="com.mobiletropic.neospy" version="0.1.0">
   <name>NeoSpy</name>
-  <description/>
+  <description>Made with Monaca (http://monaca.mobi)</description>
   <author/>
-  <access origin="*"/>
   <content src="index.html"/>
-
   <preference name="loglevel" value="DEBUG"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="BackgroundColor" value="0xffffffff"/>
-  <preference name="DisallowOverscroll" value="true"/>
   <preference name="ErrorUrl" value=""/>
-  <preference name="Fullscreen" value="false"/>
-  <preference name="KeepRunning" value="true"/>
-  <preference name="monaca:WebViewEngine" value="default"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="1000"/>
-  <preference name="Orientation" value="default"/>
   <preference name="monaca:DisableCookie" value="false"/>
-  <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
-
   <feature name="App">
     <param name="android-package" value="org.apache.cordova.App"/>
   </feature>
-
   <preference name="AllowInlineMediaPlayback" value="false"/>
   <preference name="AutoHideSplashScreen" value="true"/>
   <preference name="BackupWebStorage" value="cloud"/>
@@ -42,10 +31,7 @@
   <feature name="LocalStorage">
     <param name="ios-package" value="CDVLocalStorage"/>
   </feature>
-
-  
   <preference name="ios-XCBuildConfiguration-TARGETED_DEVICE_FAMILY" value="1,2"/>
-
   <platform name="ios">
     <icon src="/res/ios/icon/icon.png" width="57" height="57"/>
     <icon src="/res/ios/icon/icon@2x.png" width="114" height="114"/>
@@ -104,4 +90,13 @@
   <platform name="chrome">
     <icon src="/platforms/chrome/icon.png" width="128" height="128"/>
   </platform>
+  <preference name="WindowsStorePublisherName" value="My Name"/>
+  <preference name="WindowsStoreIdentityName" value="0ec3838d-0c63-acf1-b8f6-560f6632a098"/>
+  <access origin="*"/>
+  <preference name="KeepRunning" value="true"/>
+  <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="Orientation" value="default"/>
+  <preference name="SplashScreenDelay" value="1000"/>
+  <preference name="Fullscreen" value="false"/>
 </widget>
