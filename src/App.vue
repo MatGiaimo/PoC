@@ -6,6 +6,7 @@
 </template>
 
 <script>
+
   import Vue from 'vue';
   import home from './pages/Home.vue';
 

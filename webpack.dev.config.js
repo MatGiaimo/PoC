@@ -17,7 +17,7 @@ try {
 }
 
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: '#eval-source-map',
   context: __dirname,
   debug: true,
   cache: true,
@@ -31,6 +31,10 @@ module.exports = {
     path: path.join(__dirname, 'www'),
     filename: 'bundle.js',
     publicPath:'/'
+  },
+
+  optimization: {
+    minimize: false
   },
 
   resolve: {
