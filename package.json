@@ -12,6 +12,7 @@
         "moment": "^2.22.2",
         "monaca-plugin-monaca-core": "3.2.0",
         "onsenui": "^2.10.1",
+        "voca": "^1.4.0",
         "vue": "^2.5.16",
         "vue-loader": "11.0.0",
         "vue-onsenui": "^2.6.1",
